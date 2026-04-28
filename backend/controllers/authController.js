@@ -14,6 +14,14 @@ const register = async (req, res) => {
       });
     }
 
+    // Validar formato de correo
+    const correoValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!correoValido.test(correo)) {
+      return res.status(400).json({
+        mensaje: "El correo no tiene un formato válido"
+      });
+    }
+
     // Validar que el nombre no tenga números
     const nombreValido = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/;
     if (!nombreValido.test(nombre)) {
