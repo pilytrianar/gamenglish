@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7fb;
+  color: #252525;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.navbar {
+  background: #111827;
+  color: white;
+  padding: 18px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  margin: 0;
+  color: #ff4fa3;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #ffedf7, #e9f7ff);
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 800px;
+  margin: 0 auto 25px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+button {
+  background: #ff4fa3;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  color: #ff4fa3;
+}
+
+.contacto form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+textarea {
+  min-height: 120px;
+}
